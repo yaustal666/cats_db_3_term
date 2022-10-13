@@ -1,0 +1,1 @@
+SELECT ABS(A + B) AS RESULT FROM ListOfNumbers;

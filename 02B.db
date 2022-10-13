@@ -1,0 +1,1 @@
+ALTER TABLE Customers ADD Email TEXT DEFAULT '@mail.ru';
