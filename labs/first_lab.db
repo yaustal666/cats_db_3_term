@@ -1,3 +1,3 @@
 SELECT COUNT(*) FROM "TABLENAME";
 
-...
+-- and so on
