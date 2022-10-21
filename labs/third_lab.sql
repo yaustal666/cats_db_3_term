@@ -7,7 +7,7 @@ GROUP BY Country;
 -- 2)Для страны с самым большим количеством записей удалить из
 -- таблицы строку(ки) имеющую(ие) информацию о компании
 --| некрасиво как-то, надо подумать ещё
-SELECT * FROM CUSTOM
+DELETE FROM CUSTOM
 WHERE Country = (SELECT Country FROM (SELECT Country, MAX(NUM)
                                       FROM (SELECT Country, COUNT(*) NUM FROM CUSTOM
                                             GROUP BY Country)))
