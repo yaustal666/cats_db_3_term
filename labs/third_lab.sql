@@ -7,7 +7,7 @@ GROUP BY Country;
 -- 2)Для страны с самым большим количеством записей удалить из
 -- таблицы строку(ки) имеющую(ие) информацию о компании
 --| некрасиво как-то, надо подумать ещё
-SELECT * FROM CUSTOM
+DELETE FROM CUSTOM
 WHERE Country = (SELECT Country FROM (SELECT Country, MAX(NUM)
                                       FROM (SELECT Country, COUNT(*) NUM FROM CUSTOM
                                             GROUP BY Country)))
@@ -37,4 +37,8 @@ VALUES ("Evangeline", "Lilly");
 
 --|
 -- Упрощение: в пятом задании достаточно показать адекватную таблицу содержащую не все данные из предыдущей
+<<<<<<< HEAD
 -- а только 'FirstName','LastName' и исправленную колонку с ошибкой.
+=======
+-- а только 'FirstName','LastName' и исправленную колонку с ошибкой."
+>>>>>>> e7d4cc2ddab61057151a8a77ddd53df0f5eb0d8a
